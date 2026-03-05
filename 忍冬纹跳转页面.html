@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo2.png">
+    <meta name="description" content="锦绣非遗是一个致力于传统纹样数据库、促进网络大众进行纹样学习、设计、沟通的平台，尽自身最大努力推动传统纹样在当下人民群众日常生活中重焕新生">
+    <meta name="keywords" content="锦绣非遗">
+    <title>锦绣非遗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf6;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #8c2b30;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem; 
+            text-align:center;
+        }
+        /* 横幅 */
+        .banner {
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url(rendongwen.jpg) center/cover no-repeat;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+
+        /* 通用容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #8c2b30;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background: #8c2b30;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* 项目介绍 */
+        .intro {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-indent:30px;
+        }
+
+        /* 分类卡片 */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            color: #8c2b30;
+            margin-bottom: 0.8rem;
+        }
+
+        /* 产品设计 */
+        .inherit {
+            background: #f6f1eb;
+            padding: 4rem 0;
+        }
+
+        /* 底部 */
+        footer {
+            background: #8c2b30;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #8c2b30;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .title{
+            border-radius: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header>
+    <div class="navbar">
+        <div class="title">
+            <img src="logo3.png" alt="锦绣非遗logo" height="35px">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">返回首页</a >
+        </div>
+    </div>
+</header>
+
+<!-- 横幅 -->
+<section class="banner" id="home">
+    <div>
+        <h1>忍冬纹</h1>
+    </div>
+</section>
+
+<!-- 纹样介绍 -->
+<section class="container" id="intro">
+    <h2 class="section-title">项目介绍</h2>
+    <div class="intro">
+        <p>1919年4月1日，当格罗皮乌斯在魏玛创造包豪斯时，这个36岁的年轻人纵有豪情壮志，恐怕也不能想到这家学校将会对百年后的世界产生怎样的影响。不论包豪斯从成立到停办之间的14年里经历过怎样的转变，毋庸置疑的一点是——在经过解构主义等的洗礼后，今日的包豪斯，早已成为了简洁、克制、甚而有点冰冷的代名词，在每个都市的摩天大厦里留下了自己理性、高效的影子。</p >
+        <br>
+        <p>然而，这一份克制却在漫长的发展发生了一种微妙的异变。在都市节奏日逐加快的当下，包豪斯那种仅强调人的使用需求而非产品艺术性的理念逐渐走向了一个压抑的极端——当城市的空间被钢筋水泥填满，目之所及皆是仰之弥高的摩天大楼，干净利落的线条充斥在视野之中，框住生活日常的同时，也框住了生命恣意的想象。</p >
+        <br>
+        <p>相应的，在后工业化时代，对工业生活、中产阶级价值观的反抗：从19世纪前半叶菲利斯·巴伦和多罗茜·拉彻继承发扬威廉·莫里斯的雕版印刷以来，一直到60年代开始嬉皮士身披的波西米亚等各种民族风格，我们都可以从那种肆意生长的花纹窥见人类对工业化的反抗、从其中逃离以及对嗣后的新生的渴望。</p>
+        <br>
+        <img src="公众号忍冬纹1.png" alt="威廉莫里斯·《草莓小偷》"   height="500px">
+        <br>
+        <p>当时间来到21世纪，社会内卷的压力只能说是有增无减。揆诸当下，无论是“在上学和上班之间选择了上香”的调侃，还是“45度青年——卷又卷不动，躺又躺不平”的自嘲，无一不反映了年轻一代的身心俱疲，不体现着对冰冷的工业化的厌倦。</p>
+        <br>
+        <p>但是，在这个时代，没有披头士也没有威廉·莫里斯的我们，难道便要屈从于这种疲态，放任自己的生命消磨在条条框框之中吗？答案是否定的，我们依旧有能力来创造出用以对抗这种疲态的旺盛的生命力。这种生命力从何而来？自然是从工业化以前的质朴中寻求一份旺盛的生命力，再对其进行适于当代的改造，以符合于今人跳脱出当下快节奏生活的需求。</p>
+        <br>
+        <p>从此观点出发，锦绣非遗项目组的美工负责人设计出了一套以忍冬纹和牡丹纹为主体的纹饰。</p>
+        <br>
+        <img src="rendongwen.jpg" alt="锦绣非遗项目组美工组设计的纹饰——忍冬纹（中）与牡丹纹"   height="500px">
+        <br>
+        <p>整个纹路中大量使用了对称、旋转等方法，以敦煌莫高窟中的忍冬纹为基本借鉴，设计出的八角忍冬纹恣意生长，向着四面八方铺张开来，契合其所象征的坚韧的生命力；四角的牡丹纹则是兼采现实牡丹形象与传统唐宋纹样设计而成，不但突出牡丹花朵繁复的特点，同时强调了牡丹叶片的旁逸斜出，以夸张的叶片长度展现了其旺盛的生命力。颜色方面，正中的忍冬纹以单一的大红色为配色，抓人眼球，体现一种如林火一般强大凶猛的生命力与野性，而四周牡丹纹那多样的颜色，则仿佛是以这中心的纹路为来源而肆意生长出的一般，飘逸而不羁。</p>
+    </div>
+</section>
+
+<!-- 产品设计 -->
+<section class="container" id="types">
+    <h2 class="section-title">相关设计</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="rendongwen1.jpg" alt="文本">
+            <div class="card-content">
+                <h3>帆布包</h3>
+                <p>这款帆布包以传统忍冬纹为设计核心，将千年丝路的艺术韵律融入日常。</p >
+            </div>
+        </div>
+        <div class="card">
+            <img src="rendongwen2.jpg" alt="文本">
+            <div class="card-content">
+                <h3>围巾</h3>
+                <p>这款围巾以源自敦煌石窟的忍冬纹为核心设计元素，将千年丝路文明的艺术基因与现代审美巧妙融合。
+  </p >
+            </div>
+        </div>
+        
+    </div>
+</section>
+
+<!-- 底部 -->
+<footer id="contact">
+    <p>锦绣非遗 © 2026 | 传承中华优秀传统文化</p >
+    <p>联系方式：17608023487</p >
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo2.png">
+    <meta name="description" content="锦绣非遗是一个致力于传统纹样数据库、促进网络大众进行纹样学习、设计、沟通的平台，尽自身最大努力推动传统纹样在当下人民群众日常生活中重焕新生">
+    <meta name="keywords" content="锦绣非遗">
+    <title>锦绣非遗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf6;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #8c2b30;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem; 
+            text-align:center;
+        }
+        /* 横幅 */
+        .banner {
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url(rendongwen.jpg) center/cover no-repeat;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+
+        /* 通用容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #8c2b30;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background: #8c2b30;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* 项目介绍 */
+        .intro {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-indent:30px;
+        }
+
+        /* 分类卡片 */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            color: #8c2b30;
+            margin-bottom: 0.8rem;
+        }
+
+        /* 产品设计 */
+        .inherit {
+            background: #f6f1eb;
+            padding: 4rem 0;
+        }
+
+        /* 底部 */
+        footer {
+            background: #8c2b30;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #8c2b30;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .title{
+            border-radius: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header>
+    <div class="navbar">
+        <div class="title">
+            <img src="logo3.png" alt="锦绣非遗logo" height="35px">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">返回首页</a >
+        </div>
+    </div>
+</header>
+
+<!-- 横幅 -->
+<section class="banner" id="home">
+    <div>
+        <h1>缠枝纹</h1>
+        
+    </div>
+</section>
+
+<!-- 纹样介绍 -->
+<section class="container" id="intro">
+    <h2 class="section-title">项目介绍</h2>
+    <div class="intro">
+        <p>文本2</p >
+        <br>
+        <p>文本3</p >
+        <br>
+        <p>文本4</p >
+    </div>
+</section>
+
+<!-- 产品设计 -->
+<section class="container" id="types">
+    <h2 class="section-title">相关设计</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="rendongwen1.jpg" alt="文本">
+            <div class="card-content">
+                <h3>缠枝纹</h3>
+                <p>文本5</p >
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo2.png" alt="文本">
+            <div class="card-content">
+                <h3>xx纹</h3>
+                <p>文本6</p >
+            </div>
+        </div>
+        <div class="card">
+            <img src="logo2.png" alt="文本">
+            <div class="card-content">
+                <h3>xx纹</h3>
+                <p>文本7</p >
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 底部 -->
+<footer id="contact">
+    <p>锦绣非遗 © 2026 | 传承中华优秀传统文化</p >
+    <p>联系方式：17608023487</p >
+</footer>
+
+</body>
+</html>

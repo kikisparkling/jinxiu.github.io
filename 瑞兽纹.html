@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo2.png">
+    <meta name="description" content="锦绣非遗是一个致力于传统纹样数据库、促进网络大众进行纹样学习、设计、沟通的平台，尽自身最大努力推动传统纹样在当下人民群众日常生活中重焕新生">
+    <meta name="keywords" content="锦绣非遗">
+    <title>锦绣非遗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf6;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #8c2b30;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem; 
+            text-align:center;
+        }
+        /* 横幅 */
+        .banner {
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url(瑞兽纹.png) center/cover no-repeat;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+
+        /* 通用容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #8c2b30;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background: #8c2b30;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* 项目介绍 */
+        .intro {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            text-indent:30px;
+        }
+
+        /* 分类卡片 */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            color: #8c2b30;
+            margin-bottom: 0.8rem;
+        }
+
+        /* 产品设计 */
+        .inherit {
+            background: #f6f1eb;
+            padding: 4rem 0;
+        }
+
+        /* 底部 */
+        footer {
+            background: #8c2b30;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #8c2b30;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+        }
+        .title{
+            border-radius: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header>
+    <div class="navbar">
+        <div class="title">
+            <img src="logo3.png" alt="锦绣非遗logo" height="35px">
+        </div>
+        <div class="nav-links">
+            <a href="index.html">返回首页</a >
+        </div>
+    </div>
+</header>
+
+<!-- 横幅 -->
+<section class="banner" id="home">
+    <div>
+        <h1>忍冬纹</h1>
+    </div>
+</section>
+
+<!-- 纹样介绍 -->
+<section class="container" id="intro">
+    <h2 class="section-title">项目介绍</h2>
+    <div class="intro">
+         <p>乙巳年的腊月悄然过半，丙午年的身影近在眼前。在这年味愈发浓重的当下，五花八门的贺岁纹样开始步入人们的视野。这些纹样中，除了抱着鲤鱼的胖娃娃、满面红光的老寿星等，还有一类取材于自然，融合了人们瑰丽多彩的想象与对生活的美好寄托的纹样——瑞兽纹。</p >
+        <br>
+        <img src="瑞兽纹1.jpg" alt="武强县年画——虎"   height="500px">
+        <br>
+        <p>在北京故宫博物院中，收藏了一尊西周凤鸟纹爵。它与现藏于新疆博物馆的楚国织物上呈现出的凤凰形象均保留了先秦时期独有的粗犷特征，保持了自身既有的神秘，正如吴文化博物馆在《镜鉴纹样：从馆藏唐代双鸾瑞兽纹铜镜说起》中所描述的那样：“······都是一种崇高、权威而高于人类的超自然形象。”。</p >
+        <br>
+        <p>这种崇高而充满权威的意蕴被保留了下来并以抽象的形式表现在人们的生活中。在吴昊《民间瑞兽造型特征探析——以山西布老虎为例》一文中，作者以山西布老虎延续的虎口噬人造型为例，明确地指出了：“这些奇异的造型不仅表达了某种观念，还是一个基于“美感”的艺术创作行为，二者靠一种既对立又具功能性的双重关系彼此联系，通过超现实的形象，表现人们赋予的超现实力量。”，而这种力量“和人的生存要求保持着对应关系”，“都袒露着人们热切的生命欲望”。</p >
+        <br>
+        <p>然而，似乎并不是所有人都仅满足于对自然的抽象化描述。现藏于平凉博物馆的唐双鸾瑞兽花鸟纹铜镜上，两只凤凰和一只瑞兽姿态各异，更有花草纹样穿插其间。从这面铜镜上可以清晰地看出，两只凤鸟的形象相较于先秦时期，更多地借鉴了现实中的鸟类形象——凤鸟的身躯更加丰满，更加接近于现实中的鸟类。而铜镜上方的瑞兽则更为明显地体现了这些纹样与现实的关联——整个身躯几乎完全是以现实中的马为范本进行刻画，只有头上的角是工匠想象力的反映。     </p >
+         <br>
+        <img src="瑞兽纹2.png" alt="唐双鸾瑞兽花鸟纹"   height="500px">
+         <br>
+        <p>这面铜镜并非孤例，这一时期的瑞兽纹无一不反映出其刻画已经出现了对现实动物的借鉴，倾向于从人类的幻想中找出那些写实的成分，使得瑞兽的形象不再那么概念化和抽象化，焕发出盎然的生机。</p >
+         <br>
+         <p>从这时开始，瑞兽纹样走下了“神坛”。在唐代这个雄健且富强的盛世里，代表祥瑞的各式纹样上开始出现了鲜艳的色彩，曾经高高在上的象征逐渐向着世俗的凡人靠拢。尤其中唐以后，这一势头更进入了一个新的高峰。</p >
+        <br>
+        <p>唐代之后，或许是思想解放的影响，对自然的描摹和对颜色的随心运用愈演愈烈，并在明清达到了顶峰——无论是山水动物纹里的自然风光、蝙蝠纹样的吉祥寓意还是云龙纹象征的皇家威严，无一不使用了写实、具象的形式进行呈现。</p>
+        <br>
+        <img src="瑞兽纹3.jpg" alt="明代天球瓶上的云龙纹"   height="500px">
+        <br>
+        <p>当我们回过头来开始梳理瑞兽纹在中国历史上的流变，会发现：尽管时代和社会现实一变再变，中国的传统纹样从未失去其生命力。相反，在历史的长河中，它不断以新的呈现形式一再迸发出新的活力，迎接着下一个新的时代。</p>
+        <br>
+        <p>而在今天，无论是孩子们手上的布老虎玩偶，还是年画里各异的瑞兽形象，都让人真切地体会到了瑞兽纹在当下现实里的强大生命力。在故宫博物馆与建设银行携手推出的“故宫瑞兽”系列文创中，更是展现了瑞兽纹样的创新应用在未来广阔的前景与巨大的可开发价值。</p>
+    </div>
+</section>
+
+<!-- 产品设计 
+<section class="container" id="types">
+    <h2 class="section-title">相关设计</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="rendongwen1.jpg" alt="文本">
+            <div class="card-content">
+                <h3>帆布包</h3>
+                <p>这款帆布包以传统忍冬纹为设计核心，将千年丝路的艺术韵律融入日常。</p >
+            </div>
+        </div>
+        <div class="card">
+            <img src="rendongwen2.jpg" alt="文本">
+            <div class="card-content">
+                <h3>围巾</h3>
+                <p>这款围巾以源自敦煌石窟的忍冬纹为核心设计元素，将千年丝路文明的艺术基因与现代审美巧妙融合。
+  </p >
+            </div>
+        </div>
+        
+    </div>
+</section>
+-->
+
+<!-- 底部 -->
+<footer id="contact">
+    <p>锦绣非遗 © 2026 | 传承中华优秀传统文化</p >
+    <p>联系方式：17608023487</p >
+</footer>
+
+</body>
+</html>

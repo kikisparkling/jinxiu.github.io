@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="logo2.png">
+    <meta name="description" content="锦绣非遗是一个致力于传统纹样数据库、促进网络大众进行纹样学习、设计、沟通的平台，尽自身最大努力推动传统纹样在当下人民群众日常生活中重焕新生">
+    <meta name="keywords" content="锦绣非遗">
+    <title>锦绣非遗</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #fdfbf6;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* 导航栏 */
+        header {
+            background-color: #8c2b30;
+            color: white;
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 99;
+        }
+
+        .navbar {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+           
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem; 
+            text-align:center;
+        }
+        /* 横幅 */
+        .banner {
+            height: 500px;
+            background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.6)), 
+                        url(logo2.png) center/cover no-repeat;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 0 1rem;
+        }
+
+        .banner h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .banner p {
+            font-size: 1.2rem;
+            max-width: 800px;
+        }
+
+        /* 通用容器 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 1rem;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 3rem;
+            color: #8c2b30;
+            position: relative;
+        }
+
+        .section-title::after {
+            content: "";
+            width: 80px;
+            height: 3px;
+            background: #8c2b30;
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: -10px;
+        }
+
+        /* 项目介绍 */
+        .intro {
+            background: white;
+            border-radius: 12px;
+            padding: 2.5rem;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            height:auto;
+            text-indent:30px;
+        }
+
+        /* 分类卡片 */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 1.5rem;
+        }
+
+        .card h3 {
+            color: #8c2b30;
+            margin-bottom: 0.8rem;
+        }
+
+        /* 产品设计 */
+        .inherit {
+            background: #f6f1eb;
+            padding: 4rem 0;
+        }
+
+        /* 底部 */
+        footer {
+            background: #8c2b30;
+            color: white;
+            text-align: center;
+            padding: 2rem 1rem;
+            height:150px;
+        }
+
+        /* 按钮 */
+        .btn {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.7rem 1.5rem;
+            background: #8c2b30;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            float:right;
+            overflow:right;
+        }
+        .title{
+            border-radius: 300px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header>
+    <div class="navbar">
+        <div class="title">
+            <img src="logo3.png" alt="锦绣非遗logo" height="35px">
+        </div>
+        <div class="nav-links">
+            <a href=" ">首页</a >
+            <a href="#intro">项目介绍</a >
+            <a href="#types">纹样资料</a >
+            <a href="#inherit">产品设计</a >
+            <a href="#contact">联系我们</a >
+        </div>
+    </div>
+</header>
+
+<!-- 横幅 -->
+<section class="banner" id="home">
+    <div>
+        <h1>锦绣非遗</h1>
+        <p>锦绣非遗是一个致力于传统纹样数据库、促进网络大众进行纹样学习、设计、沟通的平台，</p>
+        <p>尽自身最大努力推动传统纹样在当下人民群众日常生活中重焕新生</p >
+    </div>
+</section>
+
+<!-- 项目介绍 -->
+<section class="container" id="intro">
+    <h2 class="section-title">项目介绍</h2>
+    <div class="intro">
+        <p>  目前，非遗元素在国内时尚皮具箱包设计实践中呈现出多元化和融合性的发展趋势。其中，传统刺绣元素与箱包皮革表面的融合是较为常见的非遗元素应用形式之一，构建了箱包产品与受众之间的文化审美认同。然而，经过研究发现，部分面临传承方式僵化，宣传媒介单一，传承人才流失的非遗元素依旧在时尚设计中被忽视，非遗传统纹样和图案就是其中一部分。调查显示，我国本土对非遗传统纹样的活化运用和商业价值的挖掘能力远低于LV、Celine等外国品牌，这显示了我国在传统纹样的活化运用和价值重塑方面有所欠缺。</p>
+        <p>基于此，本团队深入研究了传统艺术作品中的纹样设计和图案元素，借助“非遗纹样的时尚化表达定位——产品服务设计——商业模式构建”的思路体系，力图通过对传统纹样的创新设计和活化利用，融入现代科技，打造符合Z世代时尚审美，具有市场竞争力的时尚单品和文化产品。同时，将大数据平台与非遗纹样设计结合，打造非遗基础纹样数据库，搭建非遗纹样智能设计平台，提高非遗纹样活化利用效率，实现中华传统纹样的创造性转化创新性发展。</p >
+        <br>
+        </div>
+</section>
+
+<!-- 纹样资料 -->
+<section class="container" id="types">
+    <h2 class="section-title">纹样资料</h2>
+    <div class="cards">
+        <div class="card">
+            <a href="瑞兽纹.html"><img src="瑞兽纹.png" alt="文本"></a>
+            <div class="card-content">
+                <h3>瑞兽纹</h3>
+                <p>瑞兽纹是中国传统装饰纹样的核心门类，以龙、凤、麒麟、狮子等神话或祥瑞动物为原型，通过夸张变形的艺术手法，承载辟邪、镇宅、祈福、招财等美好寓意，贯穿商周青铜、汉唐陶瓷、明清服饰建筑等各时代，是华夏吉祥文化的典型符号。</p >
+            </div>
+        </div>
+        <div class="card">
+            <a href="忍冬纹跳转页面.html"><img src="rendongwen.jpg" alt="文本"></a>
+            <div class="card-content">
+                <h3>忍冬纹</h3>
+                <p>以忍冬花（金银花）为原型的卷草纹样，茎蔓缠绕、花形简约，线条柔和婉转，因忍冬 “凌冬不凋”，寓意坚韧永恒、福寿绵长。受佛教文化影响深，多见于石窟壁画、造像装饰，后演变为卷草纹雏形。</p >
+            </div>
+        </div>
+       <!-- 
+        <div class="card">
+            <a href="缠枝纹.html"><img src="rendongwen.jpg" alt="文本"></a>
+            <div class="card-content">
+                <h3>缠枝纹</h3>
+                <p>文本7</p >
+            </div>
+        </div>
+    -->
+    </div>
+</section>
+
+<!-- 产品设计 -->
+<section class="container" id="inherit">
+    <h2 class="section-title">产品设计</h2>
+    <div class="cards">
+        <div class="card">
+            <a href="瑞兽纹.html"><img src="rendongwen1.jpg" alt="文本"></a>
+            <div class="card-content">
+                <h3>帆布包</h3>
+                <p>这款帆布包以传统忍冬纹为设计核心，将千年丝路的艺术韵律融入日常。</p >
+            </div>
+        </div>
+        <div class="card">
+            <a href="忍冬纹跳转页面.html"><img src="rendongwen2.jpg" alt="文本"></a>
+            <div class="card-content">
+                <h3>围巾</h3>
+                <p>这款围巾以源自敦煌石窟的忍冬纹为核心设计元素，将千年丝路文明的艺术基因与现代审美巧妙融合。</p >
+            </div>
+        </div>
+        <div class="card">
+            <a href="缠枝纹.html"><img src="manghewaw1.jpg" alt="文本"></a>
+            <div class="card-content">
+                <h3>盲盒娃娃</h3>
+                <p>这款盲盒娃娃以 Q 版软萌造型重塑潇湘妃子的形象：乌黑的双麻花辫垂落肩头，发间点缀着冰裂纹发钗，冰裂纹的几何线条利落清冽，恰如黛玉孤高自许、不与世俗同流的品性；发梢的金色圆饰，又添了几分精致灵动。她身着淡蓝交领短衫，袖口与衣摆晕染成柔粉，腰间系着同色系蝴蝶结，配色清雅如潇湘馆的翠竹。</p >
+            </div>
+        </div>
+    </div>
+</section>
+<br>
+<!-- 底部 -->
+<footer id="contact">
+    <p>锦绣非遗 © 2026 | 传承中华优秀传统文化</p >
+    <p>联系方式：17608023487</p >
+</footer>
+
+</body>
+</html>
